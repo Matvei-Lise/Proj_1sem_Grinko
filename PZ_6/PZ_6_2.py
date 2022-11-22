@@ -6,5 +6,3 @@ def PrintList(List):
     for element in List:
         print(element, end=' ')
     print()
-
-List = []
