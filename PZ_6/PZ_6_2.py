@@ -2,7 +2,7 @@
 
 import random
 
-d = int(input('Введите размер массива'))
+d = int(input('Введите размер массива '))
 List = []
 t = 0
 while t < d:
@@ -11,7 +11,6 @@ while t < d:
         k = List[t]
     t += 1
 
-print('Исходный массив: ', sep='\n')
-print(List)
+print('Исходный массив: ', List)
 b = min(List)
 print('Минимальный элемент списка: ', b, ' его индекс ', List.index(b))
