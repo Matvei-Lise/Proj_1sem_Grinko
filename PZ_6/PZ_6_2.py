@@ -14,5 +14,4 @@ while t < d:
 print('Исходный массив: ', sep='\n')
 print(List)
 b = min(List)
-print('Минимальный элемент списка: ', min(List))
-print(list.index(b))
+print('Минимальный элемент списка: ', b, ' его индекс ', List.index(b))
