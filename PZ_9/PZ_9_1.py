@@ -5,5 +5,5 @@
 import random
 a = int(input("Введите чётный размер словаря: "))
 
-dict1 = {x: random.randint(-100, 100) for x in range(a)}
-print(dict1)
+dict = {x: random.randint(-100, 100) for x in range(a)}
+print(dict2)
