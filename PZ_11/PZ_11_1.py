@@ -14,7 +14,6 @@ f11.close()
 
 f12 = open('data_12.txt', 'w')
 f12.write('Исходные данные:  ')
-f12.write('\n')
 f12.writelines(l)
 f12.close()
 
@@ -29,21 +28,16 @@ f11 = open('data_11.txt')
 min = 0
 for i in range(len(k)):
     min = min if min < k[i] else k[i]
+max = max(k)
+lm = []
+for i in range(len(k)):
+    a = k[i]*max
+    lm.append(str(a))
+result = " ".join(lm)
+f11.close()
 
 f12 = open('data_12.txt', 'a')
 f12.write('\n')
-print('Количество элементов: ', len(k),'\n' 'Минимальный элемент: ', min, file=f12)
-f12.close()
-
-f11 = open('data_11.txt')
-max = 0
-for i in range(len(k)):
-    max = max if max > k[i] else k[i]
-for i in range(len(k)):
-    a = k[i]
-    a = a * max
-
-f12 = open('data_12.txt', 'a')
-f12.write('\n')
-print('Элементы, умноженные на первый максимальный элемент: ', file=f12)
+print('Количество элементов: ', len(k),'\n' 'Минимальный элемент: ', min,
+      '\n' 'Элементы, умноженные на первый максимальный элемент: ', result, file=f12)
 f12.close()
