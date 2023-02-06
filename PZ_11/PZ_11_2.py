@@ -6,9 +6,7 @@ t = 0
 l = 0
 for i in open('text18-4.txt', encoding='UTF-8'):
     print(i, end='')
-    # print('i',i)
     for j in i:
-        # print('j',j)
         if j.isalpha() == True:
             t += 1
 
